@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: da774m2sz-python-gitops
+  description: This is GitOps manifest for da774m2sz-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=da774m2sz-python
+    backstage.io/kubernetes-id: da774m2sz-python 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: da774m2sz-python   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:da774m2sz-python

@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: da774m2sz-python-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/da774m2sz-python
